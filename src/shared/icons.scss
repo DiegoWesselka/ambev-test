@@ -1,0 +1,27 @@
+
+// Icons
+.icon:before {
+    font-family: FontAwesome;
+    font-size: 16pt;
+    margin:10px;
+    display: inline-block;
+  }
+  .cart::before{
+    content: "\f217";
+  }
+  .beer::before{
+    content: "\f0fc";
+  }
+  .wallet::before{
+    content: "\f1ee";
+  }
+  .cog::before{
+    content: "\f013";
+  }
+  .question::before{
+    content: "\f128";
+  }
+  .bell::before{
+    font-size:20pt;
+    content: "\f0f3";
+  }
