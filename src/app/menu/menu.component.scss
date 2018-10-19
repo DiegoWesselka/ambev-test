@@ -10,7 +10,6 @@
 
 .sidemenu,
 .content {
-    
     height:100%;
     vertical-align: top;
     background: #1D2B4D;
@@ -29,6 +28,7 @@
     font-size: 12pt;
     font-weight: 500;
     height:55px;
+    border-left:4px solid #1D2B4D;
     span{
       position: absolute;
       bottom:3px;
@@ -48,6 +48,7 @@
     }
     &.active, &:hover{
       background: #16223E;
+      border-left:4px solid #fff;
       a{
         text-decoration: none;
       }

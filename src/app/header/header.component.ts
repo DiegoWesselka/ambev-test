@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  private name = "Diego W"
   ngOnInit() {
   }
 
