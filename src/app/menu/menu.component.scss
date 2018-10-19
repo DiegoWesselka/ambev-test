@@ -1,0 +1,89 @@
+.arrow{
+  position: relative;
+  float:right;
+  font-size: 18pt;
+  margin:15px;
+  color:#F4A700;
+}
+
+.sidemenu,
+.content {
+    
+    height:100%;
+    vertical-align: top;
+    background: #1D2B4D;
+}
+.sidemenu{
+  position: absolute;
+  width:205px;
+  top:0;
+  .top{
+    height: 70px;
+    border-bottom:1px solid #2C3F6B;
+  }
+  li{
+    list-style: none;
+    margin:20px 0;
+    font-size: 12pt;
+    font-weight: 500;
+    height:55px;
+    span{
+      position: absolute;
+      bottom:3px;
+      left:40px;
+      text-transform: uppercase;
+      color:#48F36D;
+      font-size:9pt;
+      font-weight: bold;
+      display: block;
+    }
+    a{
+      position: relative;
+      float:left;
+      width: 100%;
+      height:100%;
+      color:#fff;
+    }
+    &.active, &:hover{
+      background: #16223E;
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+.content {
+  height: 400px;
+  width: 400px;
+  overflow-y: scroll;
+}
+
+// Icons
+.icon:before {
+  font-family: FontAwesome;
+  font-size: 16pt;
+  margin:10px;
+  display: inline-block;
+}
+.cart::before{
+  content: "\f217";
+}
+.beer::before{
+  content: "\f0fc";
+}
+.wallet::before{
+  content: "\f1ee";
+}
+.cog::before{
+  content: "\f013";
+}
+.question::before{
+  content: "\f128";
+}
+.bell::before{
+  font-size:20pt;
+  content: "\f0f3";
+}
+
