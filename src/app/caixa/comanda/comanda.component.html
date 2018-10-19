@@ -1,3 +1,30 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Comanda 1</th>
+        <th>Mesa</th>
+        <th>Atendente</th>
+        <th>Nº clientes</th>
+      </tr>
+    </thead>
+    <tbody>
+  <tr>
+    <td>
+      15:50h
+    </td>
+    <td>
+      8
+    </td>
+    <td>
+      Thanos
+    </td>
+    <td>
+      1
+    </td>
+  </tr>
+  </tbody>
+</table>
+  
 
 <table class="table table-bordered">
   <thead>
@@ -14,21 +41,23 @@
         <td>{{list.product_price | currency: 'BRL'}}</td>
         <td>
           {{list.product_quality}}
-          <button class="btn btn-success btn-xs plus" (click)="add(list.product_id)"><i class="glyphicon glyphicon-plus"></i></button>
-          <button class="btn btn-danger btn-xs minus" (click)="del(list.product_id)"><i class="glyphicon glyphicon-minus"></i></button>
+          <button class="btn btn-success btn-xs plus" (click)="add(list.product_id)">+</button>
+          <button class="btn btn-danger btn-xs minus" (click)="del(list.product_id)">-</button>
         </td>
         <td>
           {{list.product_subtotal | currency: 'BRL'}}
-          <button class="btn btn-danger btn-sm" (click)="delproduct(list.product_id)">Delete</button>
+          <i class="fa fa-trash" aria-hidden="true" (click)="delproduct(list.product_id)"></i>
+
+          
         </td>
       </tr>
   </tbody>
   <tfoot>
     <tr>
-      <td>Total Price</td>
+      <td>Total parcial</td>
       <td colspan="6" class="text-right">{{total | currency: 'BRL' }}</td>
     </tr>
   </tfoot>
 </table>
 
-<app-pagamento></app-pagamento>
+<app-pagamento [recebeProdutos]="products" ></app-pagamento>
