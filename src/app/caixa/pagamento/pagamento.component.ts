@@ -8,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class PagamentoComponent implements OnInit {
 
   constructor() { }
-
+  
+  private title = 'Pagamento'
+  
   ngOnInit() {
   }
 
